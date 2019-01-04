@@ -1,14 +1,15 @@
 #pragma once
+#include <string>
 class Racional {
 public:
-	Racional(double, double, double, double);
+	Racional(int, int, int, int);
 	~Racional();
-	double sumaDeFracciones();
-	double restaDeFracciones();
-	double multiplicacionDeFracciones();
-	double divisionDeFracciones();
-	double eleverFraccion();
-	double ElevarEquivalente();
+	std::string sumaDeFracciones();
+	std::string restaDeFracciones();
+	std::string multiplicacionDeFracciones();
+	std::string divisionDeFracciones();
+	std::string eleverFraccion();
+	std::string ElevarEquivalente();
 private: 
-	double a, b, c, d, resultado;
+	int a, b, c, d, numerador, denominador;
 };
